@@ -36,3 +36,113 @@ footer {
     text-align: center;
     padding: 10px;
 }
+/* RESPONSIVE PARA CELULARES */
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+        display: block;
+    }
+
+    section {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .contenedor-cursos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .curso {
+        width: 90%;
+    }
+
+    .formulario form {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
+.formulario {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.formulario button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #b30000;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+/* BLOG */
+.blog-lista {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.post h2 a {
+    text-decoration: none;
+    color: #b30000;
+}
+
+.fecha {
+    font-size: 13px;
+    color: gray;
+}
+
+.leer-mas {
+    display: inline-block;
+    margin-top: 10px;
+    color: #b30000;
+    font-weight: bold;
+}
+
+.post-contenido {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .blog-lista,
+    .post-contenido {
+        width: 95%;
+    }
