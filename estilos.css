@@ -146,3 +146,160 @@ footer {
     .post-contenido {
         width: 95%;
     }
+    
+    /* =====================
+   ESTILOS GENERALES
+===================== */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+/* =====================
+   HERO DEL CURSO
+===================== */
+
+.hero-curso {
+    background: linear-gradient(135deg, #7b1c1c, #c0392b);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-curso h1 {
+    font-size: 38px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.hero-curso p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* =====================
+   BOTÓN PRINCIPAL
+===================== */
+
+.btn-comprar {
+    background-color: #ffffff;
+    color: #7b1c1c;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+/* =====================
+   SECCIONES DE CONTENIDO
+===================== */
+
+.contenido-curso,
+.beneficios,
+.modulos,
+.precio {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+/* =====================
+   BENEFICIOS
+===================== */
+
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios li {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* =====================
+   MÓDULOS
+===================== */
+
+.modulos p {
+    border-left: 4px solid #c0392b;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   PRECIO
+===================== */
+
+.precio {
+    text-align: center;
+}
+
+.precio .monto {
+    font-size: 42px;
+    color: #c0392b;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* =====================
+   RESPONSIVE (CELULAR)
+===================== */
+
+@media (max-width: 768px) {
+    .hero-curso h1 {
+        font-size: 28px;
+    }
+
+    .hero-curso p {
+        font-size: 16px;
+    }
+
+    .contenido-curso,
+    .beneficios,
+    .modulos,
+    .precio {
+        padding: 25px;
+        margin: 20px 10px;
+    }
+
+    .btn-comprar {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+}
