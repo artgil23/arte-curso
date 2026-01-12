@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+section {
+    background: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* RESPONSIVE PARA CELULARES */
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+        display: block;
+    }
+
+    section {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .contenedor-cursos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .curso {
+        width: 90%;
+    }
+
+    .formulario form {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
+.formulario {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.formulario button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #b30000;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+/* BLOG */
+.blog-lista {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.post h2 a {
+    text-decoration: none;
+    color: #b30000;
+}
+
+.fecha {
+    font-size: 13px;
+    color: gray;
+}
+
+.leer-mas {
+    display: inline-block;
+    margin-top: 10px;
+    color: #b30000;
+    font-weight: bold;
+}
+
+.post-contenido {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .blog-lista,
+    .post-contenido {
+        width: 95%;
+    }
+    
+    /* =====================
+   ESTILOS GENERALES
+===================== */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+/* =====================
+   HERO DEL CURSO
+===================== */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #c0c0c0, #d4af37);
+  color: #fff;
+  border-bottom: 4px solid #d4af37;
+}
+
+header h1 span {
+  color: #fff8dc;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.tarjeta {
+  background-color: #fff;
+  border: 2px solid #c0c0c0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  border-color: #d4af37;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.tarjeta h3 {
+  margin: 10px;
+  color: #444;
+}
+
+.tarjeta p {
+  margin: 0 10px 15px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Sección de envío */
+.subir-foto {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  border-top: 3px solid #d4af37;
+}
+
+.subir-foto form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subir-foto input, 
+.subir-foto textarea {
+  padding: 10px;
+  border: 2px solid #c0c0c0;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.subir-foto button {
+  background: linear-gradient(135deg, #d4af37, #c0c0c0);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subir-foto button:hover {
+  background: linear-gradient(135deg, #c0c0c0, #d4af37);
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #ddd;
+  font-size: 0.9em;
+
+.hero-curso {
+    background: linear-gradient(135deg, #7b1c1c, #c0392b);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-curso h1 {
+    font-size: 38px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.hero-curso p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* =====================
+   BOTÓN PRINCIPAL
+===================== */
+
+.btn-comprar {
+    background-color: #ffffff;
+    color: #7b1c1c;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+/* =====================
+   SECCIONES DE CONTENIDO
+===================== */
+
+.contenido-curso,
+.beneficios,
+.modulos,
+.precio {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+/* =====================
+   BENEFICIOS
+===================== */
+
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios li {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* =====================
+   MÓDULOS
+===================== */
+
+.modulos p {
+    border-left: 4px solid #c0392b;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   PRECIO
+===================== */
+
+.precio {
+    text-align: center;
+}
+
+.precio .monto {
+    font-size: 42px;
+    color: #c0392b;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+.footer-pro {
+    background-color: #222;
+    text-align: center;
+    padding: 25px;
+}
+
+/* =====================
+   RESPONSIVE (CELULAR)
+===================== */
+
+@media (max-width: 768px) {
+    .hero-curso h1 {
+        font-size: 28px;
+    }
+
+    .hero-curso p {
+        font-size: 16px;
+    }
+
+    .contenido-curso,
+    .beneficios,
+    .modulos,
+    .precio {
+        padding: 25px;
+        margin: 20px 10px;
+    }
+
+    .btn-comprar {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+}
+
