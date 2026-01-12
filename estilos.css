@@ -171,6 +171,111 @@ section {
    HERO DEL CURSO
 ===================== */
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #c0c0c0, #d4af37);
+  color: #fff;
+  border-bottom: 4px solid #d4af37;
+}
+
+header h1 span {
+  color: #fff8dc;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.tarjeta {
+  background-color: #fff;
+  border: 2px solid #c0c0c0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  border-color: #d4af37;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.tarjeta h3 {
+  margin: 10px;
+  color: #444;
+}
+
+.tarjeta p {
+  margin: 0 10px 15px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Sección de envío */
+.subir-foto {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  border-top: 3px solid #d4af37;
+}
+
+.subir-foto form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subir-foto input, 
+.subir-foto textarea {
+  padding: 10px;
+  border: 2px solid #c0c0c0;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.subir-foto button {
+  background: linear-gradient(135deg, #d4af37, #c0c0c0);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subir-foto button:hover {
+  background: linear-gradient(135deg, #c0c0c0, #d4af37);
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #ddd;
+  font-size: 0.9em;
+
 .hero-curso {
     background: linear-gradient(135deg, #7b1c1c, #c0392b);
     color: white;
@@ -276,6 +381,11 @@ footer {
     padding: 20px;
     font-size: 14px;
 }
+.footer-pro {
+    background-color: #222;
+    text-align: center;
+    padding: 25px;
+}
 
 /* =====================
    RESPONSIVE (CELULAR)
@@ -303,3 +413,4 @@ footer {
         font-size: 16px;
     }
 }
+
